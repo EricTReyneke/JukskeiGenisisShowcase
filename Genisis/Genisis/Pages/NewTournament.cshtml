@@ -1,0 +1,86 @@
+﻿@page
+@model Genisis.Pages.NewTournamentModel
+
+<head>
+    <link rel="stylesheet" href="~/css/CreateTournamentStyles.css">
+    <script src="~/js/CreateTournamentScript.js"></script>
+</head>
+
+<div class="form-body">
+    <h1 id="index-h1">Create New Tournament</h1>
+    <form method="post" asp-page-handler="CreateNewTournament">
+        <div class="flex-body">
+            <br />
+            <div class="flex1">
+                <label class="input-labels1" id="tournament-name-label">Tournament Name</label>
+                <input name="Name" class="input1" type="text" placeholder="SA Championships" />
+
+                <br />
+
+                <label class="input-labels1" id="tournament-union-label">Union</label>
+                <input name="UnionName" class="input1" type="text" placeholder="Gauteng North" />
+
+                <br />
+
+                <label class="input-labels1" id="tournament-type-label">Tournament Type</label>
+                <select name="Type" id="tournament-type" class="type-combo">
+                    <option value="Open">Open</option>
+                    <option value="Seniors">Seniors</option>
+                    <option value="Juniors">Juniors</option>
+                </select>
+
+                <br />
+
+                <label class="input-labels1" id="tournament-start-date-label">Start Date</label>
+                <input name="StartDate" class="input1 date-boxes" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" onchange="updateEndDate()" />
+            </div>
+
+            <div class="flex2">
+                <label class="input-labels2" id="tournament-address-label">Address</label>
+                <input name="Address" class="input2" type="text" placeholder="123 Street, Pretoria" />
+
+                <br />
+
+                <label class="input-labels2" id="tournament-duration-label">Tournament Duration</label>
+                <select name="Duration" id="tournament-duration" class="duration-combo" onchange="updateEndDate()">
+                    <option value="Day">Day</option>
+                    <option value="League">League</option>
+                    <option value="Week">Week</option>
+                </select>
+
+                <br />
+
+                <label class="input-labels2" id="pits-playable-label">Pits Playable</label>
+                <input name="PitsPlayable" class="input2" type="number" min="1" placeholder="Number of pits" />
+
+                <br />
+
+                <label class="input-labels2" id="tournament-end-date-label">End Date</label>
+                <input name="EndDate" class="input2 date-boxes" type="date" value="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" readonly />
+            </div>
+        </div>
+
+        <div class="category-div">
+            <div class="hide-when-juniors">
+                <label class="input-labels2" id="categories-label">Categories</label>
+                <input name="categories" class="input-category2" id="categories-input" type="text" placeholder="Kopersbond" />
+            </div>
+
+            <h5 class="categories-added-heading">Categories Added</h5>
+
+            <br />
+
+            <div id="categories-list"></div>
+
+            <br />
+
+            <button class="push-category" type="button" onclick="AddCategory(); AddCategoryFrontEnd();">Add Category</button>
+
+            <br />
+
+            <button class="push-tournament" id="submit-tournament" type="submit">Submit Tournament</button>
+        </div>
+        <br />
+    </form>
+    @Html.AntiForgeryToken()
+</div>

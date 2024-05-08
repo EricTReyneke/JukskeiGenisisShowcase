@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|c:\\users\\eric2\\onedrive\\documents\\ericreyneke\\genisis\\genisis\\genisis\\wwwroot\\js\\addteamscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|solutionrelative:genisis\\wwwroot\\js\\addteamscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|c:\\users\\eric2\\onedrive\\documents\\ericreyneke\\genisis\\genisis\\genisis\\pages\\addteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|solutionrelative:genisis\\pages\\addteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|c:\\users\\eric2\\onedrive\\documents\\ericreyneke\\genisis\\genisis\\genisis\\wwwroot\\css\\addteamsstyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|solutionrelative:genisis\\wwwroot\\css\\addteamsstyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|c:\\users\\eric2\\onedrive\\documents\\ericreyneke\\genisis\\genisis\\genisis\\pages\\addteam.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED40B46-1879-4675-9B41-6F6F953B424F}|Genisis\\Genisis.csproj|solutionrelative:genisis\\pages\\addteam.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddTeamScript.js",
+              "DocumentMoniker": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\wwwroot\\js\\AddTeamScript.js",
+              "RelativeDocumentMoniker": "Genisis\\wwwroot\\js\\AddTeamScript.js",
+              "ToolTip": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\wwwroot\\js\\AddTeamScript.js",
+              "RelativeToolTip": "Genisis\\wwwroot\\js\\AddTeamScript.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-02-15T21:32:13.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddTeam.cshtml",
+              "DocumentMoniker": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\Pages\\AddTeam.cshtml",
+              "RelativeDocumentMoniker": "Genisis\\Pages\\AddTeam.cshtml",
+              "ToolTip": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\Pages\\AddTeam.cshtml",
+              "RelativeToolTip": "Genisis\\Pages\\AddTeam.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswC8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-15T21:32:13.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddTeamsStyles.css",
+              "DocumentMoniker": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\wwwroot\\css\\AddTeamsStyles.css",
+              "RelativeDocumentMoniker": "Genisis\\wwwroot\\css\\AddTeamsStyles.css",
+              "ToolTip": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\wwwroot\\css\\AddTeamsStyles.css",
+              "RelativeToolTip": "Genisis\\wwwroot\\css\\AddTeamsStyles.css",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAcwLIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-15T21:32:13.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddTeam.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\Pages\\AddTeam.cshtml.cs",
+              "RelativeDocumentMoniker": "Genisis\\Pages\\AddTeam.cshtml.cs",
+              "ToolTip": "C:\\Users\\eric2\\OneDrive\\Documents\\EricReyneke\\Genisis\\Genisis\\Genisis\\Pages\\AddTeam.cshtml.cs",
+              "RelativeToolTip": "Genisis\\Pages\\AddTeam.cshtml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAawB8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T21:32:13.485Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

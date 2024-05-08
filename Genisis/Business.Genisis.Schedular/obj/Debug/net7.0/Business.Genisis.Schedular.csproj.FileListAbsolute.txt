@@ -1,0 +1,11 @@
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\bin\Debug\net7.0\Business.Genisis.Schedular.deps.json
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\bin\Debug\net7.0\Business.Genisis.Schedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\bin\Debug\net7.0\Business.Genisis.Schedular.pdb
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.GeneratedMSBuildEditorConfig.editorconfig
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.AssemblyInfoInputs.cache
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.AssemblyInfo.cs
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.csproj.CoreCompileInputs.cache
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\refint\Business.Genisis.Schedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\Business.Genisis.Schedular.pdb
+C:\GenisisBackup\Genisis\Business.Genisis.Schedular\obj\Debug\net7.0\ref\Business.Genisis.Schedular.dll

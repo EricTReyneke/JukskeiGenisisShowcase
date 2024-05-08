@@ -1,0 +1,227 @@
+﻿@page
+@using Business.Genisis.Data.Models;
+@model Genisis.Pages.AddTeamModel
+
+<head>
+    <link rel="stylesheet" href="~/css/AddTeamsStyles.css">
+    <script src="~/js/AddTeamScript.js"></script>
+</head>
+
+<div class="form-card">
+    <h1 class="heading">Add Teams</h1>
+    <div class="form-body">
+
+        <div class="add-players-div">
+            <label class="labels" id="player-names-label">Add Player Names</label>
+            <div class="checkbox-wrapper-25">
+                <input type="checkbox" id="add-player-checkbox" onchange="IsThereNoTeamsAdded(this);" checked>
+            </div>
+        </div>
+
+        <div class="flex-house-inputs">
+            <div class="flex1">
+                <div class="team-name-inputs">
+                    <label class="labels">Team Name</label>
+                    <input type="text" placeholder="Kopersbond" class="input-labels" id="team-name" name="teamName" />
+                </div>
+
+                <div class="team-category-inputs">
+                    <label class="labels" id="category-label">Team Category</label>
+                    <select name="categoryName" id="team-categories" class="input-labels team-categories">
+                        <option value="">Please select a Category</option>
+                        @foreach (Category category in Model.Categories)
+                        {
+                            <option value="@category.Name">@category.Name</option>
+                        }
+                    </select>
+
+                    <button type="submit" class="push-team-button" onclick="AddTeamToCategory();">Push Team</button>
+                </div>
+            </div>
+
+            <div class="flex2">
+                <div class="player-names">
+                    <label class="labels">Player Name</label>
+                    <label class="labels" id="captain-header">Captain</label>
+                    <div class="input-checkbox-container">
+                        <input type="text" placeholder="1st player's Name" class="input-labels extension" name="playerNames" />
+                        <input class="input-labels captain-checks" type="checkbox" onchange="ToggleCaptainCheckBoxes(0);" />
+                    </div>
+                    <div class="input-checkbox-container">
+                        <input type="text" placeholder="2nd player's Name" class="input-labels extension" name="playerNames" />
+                        <input class="input-labels captain-checks" type="checkbox" onchange="ToggleCaptainCheckBoxes(1);" />
+                    </div>
+                    <div class="input-checkbox-container">
+                        <input type="text" placeholder="3rd player's Name" class="input-labels extension" name="playerNames" />
+                        <input class="input-labels captain-checks" type="checkbox" onchange="ToggleCaptainCheckBoxes(2);" />
+                    </div>
+                    <div class="input-checkbox-container">
+                        <input type="text" placeholder="4th player's Name" class="input-labels extension" name="playerNames" />
+                        <input class="input-labels captain-checks" type="checkbox" onchange="ToggleCaptainCheckBoxes(3);" />
+                    </div>
+                    <div class="input-checkbox-container">
+                        <input type="text" placeholder="5th player's Name (R)" class="input-labels extension" name="playerNames" />
+                        <input class="input-labels captain-checks" type="checkbox" onchange="ToggleCaptainCheckBoxes(4);" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="flex-house-tables">
+                <div class="inner-one">
+                    @for (int i = 0; i < Model.Categories.Count; i += 2)
+                    {
+                        @if (i == Model.Categories.Count - 1)
+                        {
+                            break;
+                        }
+
+                        <div class="table-header">
+                            <div id="category-@Model.Categories[i].Name">
+                                <h2 class="category-headers">@Model.Categories[i].Name</h2>
+                                @if (Model.TeamsInCategoriesUniqueTeamNames.ContainsKey(@Model.Categories[i].Name))
+                                {
+                                    @foreach (PlayerTeam team in Model.TeamsInCategoriesUniqueTeamNames[$"{@Model.Categories[i].Name}"])
+                                    {
+                                        <div class="accordion-body">
+                                            <button class="accordion-button" onclick="ToggleAccordion('@team.TeamName')">
+                                                <div class="accordion-content">
+                                                    <img />
+                                                </div>
+                                                <div class="accordion-content">
+                                                    <h5>
+                                                        <span class="tour-heading">@team.TeamName</span>
+                                                    </h5>
+                                                </div>
+                                            </button>
+                                            <div class="panel" id="accordion-panel-@team.TeamName">
+                                                @{
+                                                    List<PlayerTeam> playerTeams = Model.RetrievePlayersInTeams(@Model.Categories[i].Id, team.TeamName);
+                                                    for (int j = 0; j < playerTeams.Count; j++)
+                                                    {
+                                                        PlayerTeam playerNames = playerTeams[j];
+                                                        <div class="flex-update-elements">
+                                                            <input type="text" value="@playerNames.PlayerFullName" class="input-labels update-text-boxes" id="@team.TeamName-player-@j" oninput="TogglePlayerUpdateButtons('@team.TeamName', '@j')">
+                                                            <button type="button" class="push-team-button update-buttons" id="@team.TeamName-@j" onclick="UpdatePlayerTeam('@team.TeamName', '@j', '@Model.Categories[i].Name')">Update</button>
+                                                        </div>
+                                                        <div class="hidden-player-names" id="hidden-player-names-@team.TeamName-@j" value="@playerNames.PlayerFullName">@playerNames.PlayerFullName</div>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="inner-two">
+                    @for (int i = 1; i < Model.Categories.Count; i += 2)
+                    {
+                        <div class="table-header">
+                            <div id="category-@Model.Categories[i].Name">
+                                <h2 class="category-headers">@Model.Categories[i].Name</h2>
+                                @if (Model.TeamsInCategoriesUniqueTeamNames.ContainsKey(@Model.Categories[i].Name))
+                                {
+                                    @foreach (PlayerTeam team in Model.TeamsInCategoriesUniqueTeamNames[$"{@Model.Categories[i].Name}"])
+                                    {
+                                        <div class="accordion-body">
+                                            <button class="accordion-button" onclick="ToggleAccordion('@team.TeamName')">
+                                                <div class="accordion-content">
+                                                    <img />
+                                                </div>
+                                                <div class="accordion-content">
+                                                    <h5>
+                                                        <span class="tour-heading">@team.TeamName</span>
+                                                    </h5>
+                                                </div>
+                                            </button>
+                                            <div class="panel" id="accordion-panel-@team.TeamName">
+                                                @{
+                                                    List<PlayerTeam> playerTeams = Model.RetrievePlayersInTeams(@Model.Categories[i].Id, team.TeamName);
+                                                    for (int j = 0; j < playerTeams.Count; j++)
+                                                    {
+                                                        PlayerTeam playerNames = playerTeams[j];
+                                                        <div class="flex-update-elements">
+                                                            <input type="text" value="@playerNames.PlayerFullName" class="input-labels update-text-boxes" id="@team.TeamName-player-@j" oninput="TogglePlayerUpdateButtons('@team.TeamName', '@j')">
+                                                            <button type="button" class="push-team-button update-buttons" id="@team.TeamName-@j" onclick="UpdatePlayerTeam('@team.TeamName', '@j', '@Model.Categories[i].Name')">Update</button>
+                                                        </div>
+                                                        <div class="hidden-player-names" id="hidden-player-names-@team.TeamName-@j" value="@playerNames.PlayerFullName">@playerNames.PlayerFullName</div>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>                        
+                    }
+                </div>
+            </div>
+
+            <div class="inner-final">
+                @if (Model.Categories.Count % 2 != 0)
+                {
+                    string categoryName = @Model.Categories[Model.Categories.Count - 1].Name;
+
+                    <div class="table-header">
+                        <div id="category-@categoryName">
+                            <h2 class="category-headers">@categoryName</h2>
+                            @if (Model.TeamsInCategoriesUniqueTeamNames.ContainsKey(@categoryName))
+                            {
+                                @foreach (PlayerTeam team in Model.TeamsInCategoriesUniqueTeamNames[$"{@categoryName}"])
+                                {
+                                    <div class="accordion-body">
+                                        <button class="accordion-button" onclick="ToggleAccordion('@team.TeamName')">
+                                            <div class="accordion-content">
+                                                <img />
+                                            </div>
+                                            <div class="accordion-content">
+                                                <h5>
+                                                    <span class="tour-heading">@team.TeamName</span>
+                                                </h5>
+                                            </div>
+                                        </button>
+                                        <div class="panel" id="accordion-panel-@team.TeamName">
+                                            @{
+                                                List<PlayerTeam> playerTeams = Model.RetrievePlayersInTeams(@Model.Categories.Last().Id, team.TeamName);
+                                                for (int j = 0; j < playerTeams.Count; j++)
+                                                {
+                                                    PlayerTeam playerNames = playerTeams[j];
+                                                    <div class="flex-update-elements">
+                                                        <input type="text" value="@playerNames.PlayerFullName" class="input-labels update-text-boxes" id="@team.TeamName-player-@j" oninput="TogglePlayerUpdateButtons('@team.TeamName', '@j')">
+                                                        <button type="button" class="push-team-button update-buttons" id="@team.TeamName-@j" onclick="UpdatePlayerTeam('@team.TeamName', '@j', '@Model.Categories.Last().Name')">Update</button>
+                                                    </div>
+                                                    <div class="hidden-player-names" id="hidden-player-names-@team.TeamName-@j" value="@playerNames.PlayerFullName">@playerNames.PlayerFullName</div>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <button type="button" class="push-team-button" value="write-to-database">Submit</button>
+    </div>
+    @Html.AntiForgeryToken();
+
+    <div class="warning-popup-overlay">
+        <div class="form-card warning-popup">
+            <h1 class="heading">Do you want to delete the Teams added and switch over?</h1>
+            <div class="flex-house-inputs warning-buttons">
+                <div class="flex1">
+                    <button type="button" class="push-team-button" onclick="DeletePlayerTeamsInTournament();">Confirm</button>
+                </div>
+
+                <div class="flex2">
+                    <button type="button" class="push-team-button cancel-button" onclick="ToggleWarningDiv();">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

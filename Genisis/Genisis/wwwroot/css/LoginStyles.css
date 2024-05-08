@@ -1,0 +1,135 @@
+﻿html, body {
+    background-color: #f7f7f7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-card {
+    width: 90%;
+    max-width: 600px;
+    padding: 3rem;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+
+.login-welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #30b0e3;
+}
+
+.input-info {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #666;
+    font-style: italic;
+}
+
+    .input-info::placeholder {
+        color: #aaa;
+        font-style: normal;
+    }
+
+    .input-info:focus {
+        border-color: #30b0e3;
+        box-shadow: 0 0 5px rgba(48, 176, 227, 0.5);
+    }
+
+.input-with-icon {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #30b0e3;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+    .submit-button:hover {
+        background-color: #30b0e3;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 1vh !important;
+    cursor: pointer;
+    color: #30b0e3;
+    transition: font-size 0.3s ease;
+}
+
+.sign-up {
+    display: inline-block;
+    cursor: pointer;
+    color: #30b0e3;
+    transition: font-size 0.3s ease;
+}
+
+.forgot-password, .sign-up {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+    .forgot-password:hover, .sign-up:hover {
+        transform: scale(1.1);
+        color: #30b0e3;
+    }
+
+.error-label {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#error-text {
+    padding-top: 1%;
+}

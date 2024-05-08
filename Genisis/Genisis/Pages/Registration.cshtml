@@ -1,0 +1,37 @@
+﻿@page
+@model Genisis.Pages.RegistrationModel
+
+<head>
+    <link rel="stylesheet" href="~/css/RegistrationStyles.css">
+    <script src="~/js/RegistrationScript.js"></script>
+</head>
+
+<div class="register-page">
+    <div class="register-card">
+        <div class="register-inputs">
+            <h1 class="register-welcome">Register to Genisis</h1>
+
+            <label id="fullNameError" class="error-label"></label>
+            <input class="input-info" type="text" id="fullName" placeholder="Full Name" />
+
+            <label id="userNameError" class="error-label"></label>
+            <input class="input-info" type="text" id="userName" placeholder="User Name" />
+
+            <label id="emailError" class="error-label"></label>
+            <input class="input-info" type="email" id="email" placeholder="Email" />
+
+            <label id="passwordError" class="error-label"></label>
+            <input class="input-info" type="password" id="password" placeholder="Password" />
+
+            <label id="confirmPasswordError" class="error-label"></label>
+            <input class="input-info" type="password" id="confirmPassword" placeholder="Confirm Password" />
+
+            <button type="button" class="submit-button" onclick="RegisterNewUser()">Register</button>
+            <label id="errorMessage" class="error-label"></label>
+
+            <a href="/Login" class="have-account">Already have an account?</a>
+        </div>
+    </div>
+</div>
+
+@Html.AntiForgeryToken()

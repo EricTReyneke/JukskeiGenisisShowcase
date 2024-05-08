@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Genisis</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Genisis.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="navvies">
+        @if (ViewBag.IsLoginPage != true && ViewBag.IsRegisterPage != true)
+        {
+            <div class="logo">
+                <a class="nav-link" href="/ViewTournaments">Genisis</a>
+            </div>
+            <div class="nav-items">
+                <nav>
+                    <div class="nav-item px-3" id="nav-item-1">
+                        <a class="nav-link" href="/ViewTournaments">Home</a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="/Login">Login</a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="/NewTournament">Create Tournament</a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="/AddTeam">Add Teams</a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="/AllocatePoints">Allocate Scores</a>
+                    </div>
+                </nav>
+            </div>
+        }
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

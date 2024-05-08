@@ -1,0 +1,272 @@
+﻿.form-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+    overflow: hidden;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+    padding-top: 2%;
+}
+
+.input-labels {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+    width: 80%;
+}
+
+.flex-house-inputs {
+    padding-top: 2%;
+    display: flex;
+}
+
+.flex1 {
+    width: 45%;
+    margin-left: 10%;
+    position: static;
+}
+
+.flex2 {
+    width: 45%;
+    margin-right: 10%;
+}
+
+.team-name-inputs {
+    padding-bottom: 1%;
+}
+
+.push-team-button {
+    background-color: #30b0e3;
+    border-width: 0.1px;
+    color: white;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 4%;
+    display: inline-block;
+    border-color: royalblue;
+}
+
+.extension {
+    width: 300%;
+    height: auto;
+}
+
+.team-categories {
+    width: 50%;
+    display: inline-block;
+}
+
+#category-label {
+    display: block;
+}
+
+.inner-one {
+    width: 45%;
+    margin-right: 2%;
+}
+
+.inner-two {
+    width: 45%;
+}
+
+.category-headers {
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #30b0e3;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.inner-final {
+    background-color: #30b0e3;
+    width: 92%;
+    margin-left: 4%;
+}
+
+.table-container {
+    padding-top: 2%;
+    width: 100%;
+    height: auto;
+}
+
+.flex-house-tables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 4%;
+    padding: 0.5% 0 0.5% 0;
+}
+
+.panel {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: none;
+}
+
+.accordion-body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid lightgrey;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.panel {
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: none;
+    max-height: 300px;
+}
+
+.accordion-button {
+    width: 100%;
+    background-color: transparent !important;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+    .accordion-button:hover {
+        border-color: #30b0e3;
+        border-width: 2px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+.tour-heading {
+    color: #30b0e3;
+    font-weight: bold;
+}
+
+.tournament-name {
+    color: #30b0e3;
+}
+
+.update-buttons {
+    display: none;
+    width: 20%;
+    height: 95%;
+}
+
+.update-text-boxes {
+    margin-bottom: 1%;
+    width: 70%;
+}
+
+.flex-update-elements {
+    display: flex;
+}
+
+.hidden-player-names{
+    position: absolute;
+    display: none;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"] {
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.1), hsla(0,0%,100%,.1)), -webkit-linear-gradient(left, #f66 50%, #6cf 50%);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 15px 0;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 4px hsla(0,0%,0%,.5), inset 0 0 10px hsla(0,0%,0%,.5), 0 0 0 1px hsla(0,0%,0%,.1), 0 -1px 2px 2px hsla(0,0%,0%,.25), 0 2px 2px 2px hsla(0,0%,100%,.75);
+    cursor: pointer;
+    height: 25px;
+    padding-right: 25px;
+    width: 75px;
+    -webkit-appearance: none;
+    -webkit-transition: .25s;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:after {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border-radius: 25px;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,1), inset 0 -1px 1px 1px hsla(0,0%,0%,.25), 0 1px 3px 1px hsla(0,0%,0%,.5), 0 0 2px hsla(0,0%,0%,.25);
+    content: '';
+    display: block;
+    height: 25px;
+    width: 50px;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:checked {
+    background-position: 0 0, 35px 0;
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.add-players-div{
+    margin-top: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#player-names-label{
+    padding-right: 2%;
+}
+
+.input-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+#font-awesome-arrow {
+    transition: transform 0.5s ease;
+    transform: rotate(180deg);
+}
+
+.cancel-button{
+    background-color: red;
+}
+
+.warning-popup{
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding-bottom: 2%;
+}
+
+.warning-buttons{
+    margin-left: 20%;
+}
+
+#captain-header{
+    float: right;
+    margin-right: 5%;
+}

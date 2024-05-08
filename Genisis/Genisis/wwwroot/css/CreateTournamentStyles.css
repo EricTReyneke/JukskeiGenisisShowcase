@@ -1,0 +1,442 @@
+﻿.form-body {
+    position: relative;
+    margin: 5vh auto;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    width: 80%;
+    border-radius: 50px;
+}
+
+#index-h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+    padding-top: 5vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .input1 {
+        margin: 0;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .form-body {
+        width: 90%;
+        left: 5%;
+    }
+
+    #submit-tournament {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.flex-body {
+    padding-top: 3%;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .input1 {
+        margin: 0;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .flex-body {
+        display: block;
+    }
+
+    #submit-tournament {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.input-labels1 {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    padding-left: 25%;
+}
+
+.input-labels2 {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.type-combo {
+    width: 80%;
+    margin-left: 15%;
+    padding: 12.2px;
+}
+
+.duration-combo {
+    width: 80%;
+    margin-left: 5%;
+    padding: 12.2px;
+}
+
+.date-boxes {
+    border-color: lightgrey;
+    border-width: 1px;
+    padding: 10px;
+    height: 40px;
+    text-align: left;
+}
+
+.input1 {
+    width: 80%;
+    margin-left: 15%;
+}
+
+.input2 {
+    width: 80%;
+    margin-left: 5%;
+    padding: 9px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime"], select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.push-tournament {
+    background-color: #30b0e3;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 4.5%;
+}
+
+.push-category {
+    background-color: #30b0e3;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    width: 30.75%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 34.5%;
+}
+
+#categories-input {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .input1 {
+        margin: 0;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .push-category {
+        width: 80%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #submit-tournament {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.flex1 {
+    width: 85%;
+}
+
+.flex2 {
+    width: 85%;
+}
+
+@media only screen and (max-width: 768px) {
+    .input1 {
+        margin: 0;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .flex1, .flex2 {
+        width: 100%;
+    }
+
+    #submit-tournament {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.input-category2 {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .push-category {
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
+    .input-labels1 {
+        margin-right: 5%;
+    }
+
+    #tournament-location {
+        padding-top: 8%;
+    }
+
+    .input1 {
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .input2 {
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .type-combo {
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .input-category2 {
+        width: 80%;
+        justify-content: center;
+    }
+
+    #submit-tournament {
+        margin-top: 10%;
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.category-div {
+    padding-bottom: 3%;
+}
+
+#submit-tournament {
+    width: 75%;
+    margin-top: 2%;
+    margin-left: 12.5%;
+    font-size: 20px;
+}
+
+#end-date {
+    background-color: #f4f4f4;
+}
+
+#categories-label {
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+.categories-flex-body {
+    padding-top: 2vh;
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.category-name-div1 {
+    display: inline-block;
+    font-size: 18px;
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    position: relative;
+    left: 10%;
+}
+
+.category-name-div2 {
+    display: inline-block;
+    font-size: 18px;
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    position: relative;
+    left: 10%;
+}
+
+.category-check-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
+
+    .category-check-box:checked {
+        background-color: #2196f3;
+        color: #30b0e3;
+        border-color: #2196f3;
+    }
+
+.category-check-box-flex {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
+
+    .category-check-box-flex:checked {
+        background-color: #2196f3;
+        color: #30b0e3;
+        border-color: #2196f3;
+    }
+
+.category-input {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    padding: 3px 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+    .category-input:hover {
+        border-color: #2196f3;
+        color: #30b0e3;
+    }
+
+    .category-input:focus {
+        color: #30b0e3;
+        outline: none;
+        border-color: #2196f3;
+        box-shadow: 0px 0px 5px 0px #2196f3;
+    }
+
+.select-categories-heading {
+    visibility: hidden;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+}
+
+#select-categories-heading-id {
+    padding-top: 2vh;
+}
+
+.categories-added-heading {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+}
+
+.category-name-added {
+    font-size: 20px;
+    display: inline-block;
+    visibility: visible;
+}
+
+.category-remove {
+    visibility: visible;
+    background-color: #30b0e3;
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    width: 7%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.category-flex1 {
+    width: 25%;
+    padding-left: 4.5%;
+}
+
+.category-flex2 {
+    width: 25%;
+    padding-left: 4.5%;
+}
+
+.category-flex3 {
+    width: 25%;
+    padding-left: 4.5%;
+}
+
+.category-flex4 {
+    width: 25%;
+    padding-left: 4.5%;
+}
+
+.category-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.delete-btn {
+    background-color: #30b0e3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@@media only screen and (max-width: 768px) {
+    .category-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

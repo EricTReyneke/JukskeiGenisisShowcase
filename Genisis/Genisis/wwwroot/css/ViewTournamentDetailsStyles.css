@@ -1,0 +1,69 @@
+﻿.heading {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+/* Unified table styles, avoiding repetition */
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+/* Standard cell styling */
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+/* Header cell styling */
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3 solid;
+}
+
+/* Flex container for the two-column layout */
+.category-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Flex items representing each column */
+.inner-one, .inner-two {
+    box-sizing: border-box;
+    width: calc(50% - 1%);
+    margin-right: 2%;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+    /* Remove the margin-top from the :last-child pseudo-class if it was previously set */
+    .inner-one:last-child, .inner-two:last-child {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+
+/* Specific styles for the last table 'E' */
+.inner-final {
+    background-color: #30b0e3;
+    width: 100%;
+}
+
+/* Cell overflow handling */
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.roster-tables {
+    margin-top: 2%;
+}

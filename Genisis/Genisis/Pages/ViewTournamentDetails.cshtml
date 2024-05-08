@@ -1,0 +1,120 @@
+﻿@page
+@using Business.Genisis.Data.Models;
+@model Genisis.Pages.ViewTournamentDetailsModel
+
+<head>
+    <link rel="stylesheet" href="~/css/ViewTournamentDetailsStyles.css">
+    <script src="~/js/ViewTournamentDetailsScript.js"></script>
+</head>
+
+<h1 class="heading">@Model.Tournament.Name</h1>
+
+<h3 class="heading">Scores</h3>
+
+@{
+    int categoriesLen = Model.Categories.Count;
+}
+
+<div class="table-container">
+    <div class="category-flex">
+        <div class="inner-one">
+            @for (int j = 0; j < categoriesLen; j += 2)
+            {
+                @if (Model.Categories.Count - 1 != j)
+                {
+                    <table>
+                        <tr>
+                            <th colspan="2">
+                                @Model.Categories[j].Name
+                            </th>
+                        </tr>
+                        @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(Model.Tournament.Id, Model.Categories[j].Id))
+                        {
+                            <tr>
+                                <td>
+                                    @totalScores.TeamName
+                                </td>
+                                <td>
+                                    @totalScores.TotalScore
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                }
+            }
+        </div>
+
+        <div class="inner-two">
+            @for (int k = 1; k < categoriesLen; k += 2)
+            {
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            @Model.Categories[k].Name
+                        </th>
+                    </tr>
+                    @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(Model.Tournament.Id, Model.Categories[k].Id))
+                    {
+                        <tr>
+                            <td>
+                                @totalScores.TeamName
+                            </td>
+                            <td>
+                                @totalScores.TotalScore
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </div>
+    </div>
+
+    @if (categoriesLen % 2 != 0 && categoriesLen > 1)
+    {
+        <table>
+            <tr>
+                <th colspan="2">
+                    @Model.Categories.Last().Name
+                </th>
+            </tr>
+            @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(Model.Tournament.Id, Model.Categories.Last().Id))
+            {
+                <tr>
+                    <td>
+                        @totalScores.TeamName
+                    </td>
+                    <td>
+                        @totalScores.TotalScore
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+</div>
+
+<h3 class="heading">Rosters</h3>
+
+<div class="rosters">
+    @foreach (Category category in Model.Categories)
+    {
+        <table class="roster-tables">
+            <tr>
+                <th colspan="2">
+                    @category.Name
+                </th>
+            </tr>
+            @foreach ((string First, string Second) roster in Model.RetrieveCategoryRoster(category.TournamentId, category.Id))
+            {
+                <tr>
+                    <td>
+                        @roster.First
+                    </td>
+                    <td>
+                        @roster.Second
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+</div>

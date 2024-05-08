@@ -1,0 +1,115 @@
+﻿@page
+@using Business.Genisis.Data.Models;
+@model Genisis.Pages.ViewTournamentsModel
+
+<head>
+    <link rel="stylesheet" href="~/css/ViewTournamentsStyles.css">
+    <script src="~/js/ViewTournamentsScript.js"></script>
+</head>
+
+<h1 class="heading">Jukskei Dashboard</h1>
+
+<div class="search-parms">
+    <div class="search-box">
+        <input type="text" class="search-text-box" onkeyup="SearchForTournament(this)" placeholder="Search Tournament Name">
+    </div>
+</div>
+
+@for (int i = 0; i < Model.Tournaments.Count(); i++)
+{
+    Tournament tournament = Model.Tournaments[i];
+    <div class="accordion-body" data-tournament-name="@tournament.Name">
+        <a class="tour-details" href="/ViewTournamentDetails?tournamentId=@tournament.Id">Details</a>
+        <button class="accordion-button" onclick="toggleAccordion(@i)">
+            @*<div class="accordion-content">
+        <img />
+        </div> *@
+            <div class="accordion-content">
+                <h5><span class="tour-heading">@tournament.Name</span></h5>
+                <p class="tournament-name">@tournament.UnionName</p>
+            </div>
+        </button>
+        <div class="panel" id="accordion-panel-@i">
+            @{
+                List<Category> currentCategories = Model.Categories[i];
+            }
+
+            <div class="table-container">
+                <div class="flex-house-tables">
+                    <div class="inner-one">
+                        @for (int j = 0; j < currentCategories.Count; j += 2)
+                        {
+                            @if (currentCategories.Count - 1 != j)
+                            {
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            @currentCategories[j].Name
+                                        </th>
+                                    </tr>
+                                    @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(tournament.Id, currentCategories[j].Id))
+                                    {
+                                        <tr>
+                                            <td>
+                                                @totalScores.TeamName
+                                            </td>
+                                            <td>
+                                                @totalScores.TotalScore
+                                            </td>
+                                        </tr>
+                                    }
+                                </table>
+                            }
+                        }
+                    </div>
+
+                    <div class="inner-two">
+                        @for (int k = 1; k < currentCategories.Count; k += 2)
+                        {
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        @currentCategories[k].Name
+                                    </th>
+                                </tr>
+                                @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(tournament.Id, currentCategories[k].Id))
+                                {
+                                    <tr>
+                                        <td>
+                                            @totalScores.TeamName
+                                        </td>
+                                        <td>
+                                            @totalScores.TotalScore
+                                        </td>
+                                    </tr>
+                                }
+                            </table>
+                        }
+                    </div>
+                </div>
+
+                @if (currentCategories.Count % 2 != 0 && currentCategories.Count > 1)
+                {
+                    <table>
+                        <tr>
+                            <th colspan="2">
+                                @currentCategories.Last().Name
+                            </th>
+                        </tr>
+                        @foreach (TotalScores totalScores in Model.RetrieveTopTeamsForCategory(tournament.Id, currentCategories.Last().Id))
+                        {
+                            <tr>
+                                <td>
+                                    @totalScores.TeamName
+                                </td>
+                                <td>
+                                    @totalScores.TotalScore
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+}

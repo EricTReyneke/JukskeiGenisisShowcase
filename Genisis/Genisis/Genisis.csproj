@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\AddTeamScript.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\AddTeamScript.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\AddTeamScript.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Genisis.DataAccess\Business.Genisis.DataAccess.csproj" />
+    <ProjectReference Include="..\Business.Genisis.Data\Business.Genisis.Data.csproj" />
+    <ProjectReference Include="..\Business.Genisis.DummySchedular\Business.Genisis.DummySchedular.csproj" />
+    <ProjectReference Include="..\Business.Genisis\Business.Genisis.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Business.DynamicModelReflector">
+      <HintPath>..\Lib\Business.DynamicModelReflector.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

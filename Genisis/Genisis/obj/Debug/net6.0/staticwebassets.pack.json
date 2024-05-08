@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Genisis.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Genisis.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\AddTeamsStyles.css",
+      "PackagePath": "staticwebassets\\css\\AddTeamsStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\AllocatePointsStyles.css",
+      "PackagePath": "staticwebassets\\css\\AllocatePointsStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\CreateTournamentStyles.css",
+      "PackagePath": "staticwebassets\\css\\CreateTournamentStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\ForgotPasswordStyles.css",
+      "PackagePath": "staticwebassets\\css\\ForgotPasswordStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\LoginStyles.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\RegistrationStyles.css",
+      "PackagePath": "staticwebassets\\css\\RegistrationStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\ResetPasswordStyles.css",
+      "PackagePath": "staticwebassets\\css\\ResetPasswordStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\ViewTournamentDetailsStyles.css",
+      "PackagePath": "staticwebassets\\css\\ViewTournamentDetailsStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\ViewTournamentsStyles.css",
+      "PackagePath": "staticwebassets\\css\\ViewTournamentsStyles.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\AllocatePointsScript.js",
+      "PackagePath": "staticwebassets\\js\\AllocatePointsScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\CreateTournamentScript.js",
+      "PackagePath": "staticwebassets\\js\\CreateTournamentScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\ForgotPasswordScript.js",
+      "PackagePath": "staticwebassets\\js\\ForgotPasswordScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\LoginScript.js",
+      "PackagePath": "staticwebassets\\js\\LoginScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\RegistrationScript.js",
+      "PackagePath": "staticwebassets\\js\\RegistrationScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\ResetPasswordScript.js",
+      "PackagePath": "staticwebassets\\js\\ResetPasswordScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\ViewTournamentDetailsScript.js",
+      "PackagePath": "staticwebassets\\js\\ViewTournamentDetailsScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\ViewTournamentsScript.js",
+      "PackagePath": "staticwebassets\\js\\ViewTournamentsScript.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\GenisisBackup\\Genisis\\Genisis\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Genisis.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Genisis.props",
+      "PackagePath": "build\\Genisis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Genisis.props",
+      "PackagePath": "buildMultiTargeting\\Genisis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Genisis.props",
+      "PackagePath": "buildTransitive\\Genisis.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

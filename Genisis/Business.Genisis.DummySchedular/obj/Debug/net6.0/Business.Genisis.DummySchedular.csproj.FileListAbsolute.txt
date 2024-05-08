@@ -1,0 +1,11 @@
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\bin\Debug\net6.0\Business.Genisis.DummySchedular.deps.json
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\bin\Debug\net6.0\Business.Genisis.DummySchedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\bin\Debug\net6.0\Business.Genisis.DummySchedular.pdb
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.GeneratedMSBuildEditorConfig.editorconfig
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.AssemblyInfoInputs.cache
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.AssemblyInfo.cs
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.csproj.CoreCompileInputs.cache
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\refint\Business.Genisis.DummySchedular.dll
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\Business.Genisis.DummySchedular.pdb
+C:\GenisisBackup\Genisis\Business.Genisis.DummySchedular\obj\Debug\net6.0\ref\Business.Genisis.DummySchedular.dll

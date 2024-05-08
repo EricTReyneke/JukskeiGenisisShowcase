@@ -1,0 +1,38 @@
+﻿@page
+@model LoginModel
+
+<head>
+    <link rel="stylesheet" href="~/css/LoginStyles.css">
+    <script src="~/js/LoginScript.js"></script>
+</head>
+
+<div class="login-page">
+    <div class="login-card">
+        <div class="login-inputs">
+            <h1 class="login-welcome">Welcome to Genisis</h1>
+
+            <label id="userEmailUserError" class="error-label"></label>
+            <input class="input-info" id="userEmailUser" placeholder="User Name Or Email" />
+
+            <label id="userPasswordError" class="error-label"></label>
+            <input class="input-info" id="userPassword" type="password" placeholder="Your User Password" />
+
+            <button type="button" class="submit-button" onclick="LoginUser()">Login</button>
+            <label id="errorMessage" class="error-label"></label>
+
+            <a href="/ForgotPassword" class="forgot-password">Forgot Password</a>
+            <br />
+            <a href="/Registration" class="sign-up">Sign Up</a>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div id="error-message" class="error-message">
+        <span id="error-text">@Model.ErrorMessage</span>
+        <button class="close-btn" onclick="HideErrorMessage()">&#10005</button>
+    </div>
+}
+
+@Html.AntiForgeryToken()

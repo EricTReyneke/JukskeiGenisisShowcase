@@ -1,0 +1,142 @@
+﻿@page
+@using Business.Genisis.Data.Models
+@model Genisis.Pages.AllocatePointsModel
+
+<head>
+    <link rel="stylesheet" href="~/css/AllocatePointsStyles.css">
+    <script src="~/js/AllocatePointsScript.js"></script>
+</head>
+
+<div class="form-card">
+    <h1 class="heading">Allocate Scores</h1>
+    <div class="form-body">
+        <div class="category-section">
+            <div class="activity-box">
+                <select class="combo-tournies" id="category-selectbox" onchange="DisplayCategoryTables(this);">
+                    <option value="" class="select-combo">Select Category</option>
+                    @foreach (Category category in Model.Categories)
+                    {
+                        <option value="@category.Name" class="select-combo">@category.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="table-div-container">
+                @foreach (KeyValuePair<string, IEnumerable<(string First, string Second)>> categoryRoster in Model.CategoryRosters)
+                {
+                    <div class="tables-container" id="table-@categoryRoster.Key">
+                        <table>
+                            <tr>
+                                <th colspan="6" class="header" id="table-header-category">Afdeling: @categoryRoster.Key</th>
+                            </tr>
+                            <tr>
+                                <th colspan="6" class="header">@Model.Tournament.StartDate</th>
+                            </tr>
+
+                            @{
+                                int itemCount = categoryRoster.Value.Count();
+                                int numberOfTeamsIncategory = Model.NumberOfTeamsInCategory[$"{categoryRoster.Key}"];
+                                int gamesPerMatch = numberOfTeamsIncategory % 2 == 0 ? numberOfTeamsIncategory - 1 : numberOfTeamsIncategory;
+                                int matchCounterForSplit = gamesPerMatch;
+                                int matchCounter = 0;
+                            }
+
+                            @for (int i = 0; i < itemCount; i++)
+                            {
+                                Guid teamOneGuid = Guid.NewGuid();
+                                Guid teamTwoGuid = Guid.NewGuid();
+
+                                if (matchCounterForSplit == gamesPerMatch)
+                                {
+                                    if (matchCounter != 0)
+                                    {
+                                        <tr class="match-@matchCounter-@categoryRoster.Key matches-inscope non-table-element">
+                                            <th colspan="6" class="header" id="table-header-category"><button type="button" class="allocate-scores" onclick="RetrieveMatchScores(@matchCounter, '@categoryRoster.Key')">Submit Match @matchCounter Scores</button></th>
+                                        </tr>
+                                    }
+
+                                    matchCounter++;
+                                    <tr class="time-slot match-@matchCounter-@categoryRoster.Key matches-inscope">
+                                        <td colspan="6">Wedstryd @matchCounter</td>
+                                    </tr>
+                                    <tr class="match-@matchCounter matches-inscope">
+                                        <th>Baan</th>
+                                        <th>Span</th>
+                                        <th colspan="3">Punte</th>
+                                        <th>Span</th>
+                                    </tr>
+                                    matchCounterForSplit = 0;
+                                }
+                                <tr class="match-@matchCounter-@categoryRoster.Key matches-inscope">
+                                    <td>B10</td>
+                                    <td class="team1-@matchCounter-@categoryRoster.Key">@categoryRoster.Value.ElementAt(i).First</td>
+                                    <td class="team-point-allocation">
+                                        <select class="point-allocations select-team1-@matchCounter-@categoryRoster.Key" id="teams-@categoryRoster.Value.ElementAt(i).First-score-@matchCounter-@categoryRoster.Key-@teamOneGuid" onchange="AddScoresToSecondTeam(this, 'teams-@categoryRoster.Value.ElementAt(i).Second-score-@matchCounter-@categoryRoster.Key-@teamTwoGuid');">
+                                            <option value="" class="point-allocations-select">Enter Score</option>
+                                            <option value="0" class="point-allocations-select">0</option>
+                                            <option value="2" class="point-allocations-select">2</option>
+                                            <option value="2.5" class="point-allocations-select">2.5</option>
+                                            <option value="3" class="point-allocations-select">3</option>
+                                            <option value="4.5" class="point-allocations-select">4.5</option>
+                                            <option value="5" class="point-allocations-select">5</option>
+                                            <option value="5.5" class="point-allocations-select">5.5</option>
+                                            <option value="7" class="point-allocations-select">7</option>
+                                            <option value="8" class="point-allocations-select">8</option>
+                                            <option value="9.5" class="point-allocations-select">9.5</option>
+                                            <option value="10" class="point-allocations-select">10</option>
+                                            <option value="10.5" class="point-allocations-select">10.5</option>
+                                            <option value="12" class="point-allocations-select">12</option>
+                                            <option value="12.5" class="point-allocations-select">12.5</option>
+                                            <option value="13" class="point-allocations-select">13</option>
+                                            <option value="15" class="point-allocations-select">15</option>
+                                        </select>
+                                    </td>
+                                    <td id="small-td-points"></td>
+                                    <td class="team-point-allocation">
+                                        <select class="point-allocations select-team2-@matchCounter-@categoryRoster.Key" id="teams-@categoryRoster.Value.ElementAt(i).Second-score-@matchCounter-@categoryRoster.Key-@teamTwoGuid" onchange="AddScoresToSecondTeam(this, 'teams-@categoryRoster.Value.ElementAt(i).First-score-@matchCounter-@categoryRoster.Key-@teamOneGuid');">
+                                            <option value="" class="point-allocations-select">Enter Score</option>
+                                            <option value="0" class="point-allocations-select">0</option>
+                                            <option value="2" class="point-allocations-select">2</option>
+                                            <option value="2.5" class="point-allocations-select">2.5</option>
+                                            <option value="3" class="point-allocations-select">3</option>
+                                            <option value="4.5" class="point-allocations-select">4.5</option>
+                                            <option value="5" class="point-allocations-select">5</option>
+                                            <option value="5.5" class="point-allocations-select">5.5</option>
+                                            <option value="7" class="point-allocations-select">7</option>
+                                            <option value="8" class="point-allocations-select">8</option>
+                                            <option value="9.5" class="point-allocations-select">9.5</option>
+                                            <option value="10" class="point-allocations-select">10</option>
+                                            <option value="10.5" class="point-allocations-select">10.5</option>
+                                            <option value="12" class="point-allocations-select">12</option>
+                                            <option value="12.5" class="point-allocations-select">12.5</option>
+                                            <option value="13" class="point-allocations-select">13</option>
+                                            <option value="15" class="point-allocations-select">15</option>
+                                        </select>
+                                    </td>
+                                    <td class="team2-@matchCounter-@categoryRoster.Key">@categoryRoster.Value.ElementAt(i).Second</td>
+                                </tr>
+
+                                matchCounterForSplit++;
+                            }
+
+                            <tr class="match-@matchCounter-@categoryRoster.Key matches-inscope non-table-element">
+                                <th colspan="6" class="header" id="table-header-category"><button type="button" class="allocate-scores" onclick="RetrieveMatchScores(@matchCounter, '@categoryRoster.Key')">Submit Match @matchCounter Scores</button></th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    @*<div id="all-scores-updated-@categoryRoster.Key" class="all-scores-updated success-message">
+                <span id="success-text">All Scores has been updates for category @categoryRoster.Key</span>
+                </div> *@
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="success-message" class="success-message">
+    <span id="success-text">Scores were successfully updated!</span>
+    <button class="close-btn" onclick="hideSuccessMessage()">&#10005</button>
+</div>
+
+@Html.AntiForgeryToken()

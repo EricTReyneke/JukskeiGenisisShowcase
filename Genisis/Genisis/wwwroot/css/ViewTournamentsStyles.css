@@ -1,0 +1,246 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+
+.accordion-body {
+    font-family: Arial;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 0;
+    width: 80%;
+    background-color: #f7f7f7;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    transition: background-color 0.5s ease;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.panel-flex {
+    width: 100%;
+    margin-top: 0.5%;
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 0.5s ease, background-color 0.5s ease, border-color 1s ease;
+    display: flex;
+}
+
+.tour-heading {
+    color: #30b0e3;
+    font-weight: bold;
+}
+
+.tournament-name {
+    color: #30b0e3;
+}
+
+.accordion-content {
+    margin-right: -3em;
+    text-align: left;
+    margin-top: -1%;
+}
+
+.accordion-button {
+    height: 80%;
+    width: 82%;
+    background-color: transparent !important;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+    .accordion-button:hover {
+        border-color: #30b0e3;
+        border-width: 2px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        background-color: transparent !important;
+    }
+
+.tour-details {
+    float: right;
+    margin-top: 3%;
+    margin-right: 4.5%;
+    width: 11%;
+    background-color: #30b0e3;
+    color: white;
+    border-color: royalblue;
+    border-width: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    .tour-details:hover {
+        color: white;
+    }
+
+.panel-content {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 1vw 1vw 0.5vw 1vw;
+}
+
+.search-parms {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.search-box {
+    overflow: hidden;
+    width: 15%;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+
+.search-text-box {
+    font-size: 14px;
+    width: auto;
+    border-collapse: collapse;
+    border-color: transparent;
+    text-align: center;
+}
+
+    .search-text-box:focus {
+        font-size: 14px;
+        outline: none;
+    }
+
+.activity-box {
+    margin-left: 1%;
+    overflow: hidden;
+    width: 15%;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+
+.combo-tournies {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: transparent;
+}
+
+    .combo-tournies:focus {
+        font-size: 14px;
+        outline: none;
+    }
+
+.select-combo {
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+    .select-combo:hover {
+        background-color: #30b0e3;
+        color: white;
+    }
+
+.search-button {
+    margin-top: 1%;
+    text-align: center;
+    width: 15%;
+    margin-left: 42.5%;
+    overflow: hidden;
+    background-color: #30b0e3;
+    color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: royalblue;
+}
+
+.panel {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+    .panel p {
+        margin: 0;
+        padding: 5px 0;
+        color: #333;
+    }
+
+    .panel img {
+        max-width: 100%;
+        height: auto;
+    }
+
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+th, td {
+    border: 1px solid black !important;
+    padding: 5px !important;
+    text-align: left !important;
+}
+
+th {
+    background-color: #f2f2f2 !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.flex-house-tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.inner-one, .inner-two {
+    width: 50%;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+.inner-final {
+    margin-top: 2%;
+    background-color: #30b0e3;
+    width: 92%;
+    margin-left: 2%;
+    display: block;
+}
+
+table {
+    width: 100% !important;
+    table-layout: fixed;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,190 @@
+﻿/* Base styling for the card containing the form */
+.form-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+    overflow: visible;
+}
+
+/* Heading styling */
+.heading {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #30b0e3;
+    padding-top: 2%;
+}
+
+/* Flexbox setup for the form body to center its children */
+.form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Flexbox setup for the category section */
+.category-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+}
+
+/* Center the activity box which contains the select box */
+.activity-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    box-shadow: 10px 10px 35px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+
+/* Styling for the select box */
+.combo-tournies {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: transparent;
+}
+
+    .combo-tournies:focus {
+        outline: none;
+    }
+
+.select-combo {
+    border: solid 1px lightgrey;
+}
+
+    .select-combo:hover {
+        background-color: #30b0e3;
+        color: white;
+    }
+
+/* Center the container of the table divs */
+.table-div-container {
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hide the table containers initially */
+.tables-container {
+    display: none;
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+th, td {
+    border: 1px solid black !important;
+    padding: 5px !important;
+    text-align: left !important;
+}
+
+th {
+    background-color: #f2f2f2 !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-slot {
+    background-color: #d9d9d9;
+}
+
+#small-td-points {
+    width: 1%;
+}
+
+.point-allocations {
+    width: 100%;
+}
+
+.team-point-allocation {
+    width: 10%;
+}
+
+.allocate-scores {
+    background-color: #30b0e3;
+    border: none;
+    color: white;
+    padding: 7px 13px;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+    margin-top: 1%;
+}
+
+.non-table-element,
+.non-table-element th,
+.non-table-element td {
+    border: none !important;
+    padding: 0 !important;
+    background: none !important;
+    width: auto !important;
+    margin: 0 !important;
+}
+
+.success-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#success-text {
+    padding-top: 1%;
+}
+
+.all-scores-updated {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+    text-align: center;
+}

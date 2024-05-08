@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Genisis
+build_property.RootNamespace = Genisis
+build_property.ProjectDir = C:\GenisisBackup\Genisis\Genisis\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\GenisisBackup\Genisis\Genisis
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/AddTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVGVhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/AllocatePoints.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsb2NhdGVQb2ludHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/NewTournament.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3VG91cm5hbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/ViewTournamentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1RvdXJuYW1lbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/ViewTournaments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1RvdXJuYW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GenisisBackup/Genisis/Genisis/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0dw1odch1a
